@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(Fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Grotesk';
+  src: url(Fonts/AlteHaasGroteskBold.ttf) format('truetype');
+}
+
+h1 {
+  font-family: 'Grotesk', sans-serif;
+  color: #D4573B;
+}
+
+h2 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+  h3 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 0;
+    min-width: 100%;
+    color: #211336;
+  }
+
+a.custom-button:link{
+  color: #211336;
+  text-decoration: none;
+  background-color: #FEB60A;
+  padding: 14px 28px;
+}
+
+a.custom-button:hover{
+  color: #7677A5;
+  text-decoration: underline;
+}
+
+a.custom-button:visited{
+  color: #D4573B;
+}
+
+body {
+    margin: 0;
+    margin-top: 70px;
+    background-image: url("background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
+div {
+  //border: 1px solid;
+}
+
+  .page-container {
+    display: inline-grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main{
+    grid-column: 2/3;
+  }
+
+  .company-intro{
+    margin-bottom: 100px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    &-social-media-logos{
+      justify-content: center;
+      display: inline-block;
+      .icon{
+        height: 40px;
+      }
+    }
+  }
+
+  .our-games{
+    padding: 50px;
+    padding-top: 25px;
+    background-color: whitesmoke;
+    display: block;
+    text-align:center;
+    #game-1{
+      & .hor-two-element-container{
+        display: flex;
+        justify-content: left;
+        //align-items: center;
+        text-align: left;
+        & .game-logo{
+          margin: 10px;
+          flex-grow: 1;
+          justify-content: right;
+          text-align: right;
+        }
+        & .game-description{
+          flex-grow: 5;
+          justify-content: center;
+          margin: 20px;
+        }
+      }
+      & .game-trailer{
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  }
+
+
+
+
+
+  .contact-info{
+    display: grid;
+    justify-content: center;
+    text-align:center;
+  }
+
+  h1.contact-info{
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+  
+  .container{
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 20;
+    padding-top: 0px;
+  }
+  
