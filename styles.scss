@@ -102,6 +102,12 @@ div {
           flex-grow: 5;
           justify-content: center;
           margin: 20px;
+          & .steam-button{
+            text-align: center;
+            align-items: center;
+            padding-top: 20px;
+            vertical-align: bottom;
+          }
         }
       }
       & .game-trailer{
